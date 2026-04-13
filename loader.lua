@@ -12,16 +12,15 @@ getgenv().SCRIPT_KEY = script_key
 local ScriptURL = Games[game.PlaceId]
 
 if not ScriptURL then
-    LocalPlayer:Kick("Pulse| This game is not supported!")
+    LocalPlayer:Kick("Aqua| This game is not supported!")
     return
 end
 
 if not getgenv().SCRIPT_KEY then
-    LocalPlayer:Kick("Pulse | Key not found!")
+    LocalPlayer:Kick("Aqua | Key not found!")
     return
 end
 
 loadstring(game:HttpGet(ScriptURL))()
-
 
 
